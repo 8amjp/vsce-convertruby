@@ -2,7 +2,7 @@
     "name": "vsce-convertruby",
     "displayName": "Convert Ruby",
     "description": "ルビ記法を変換する、Visual Studio Codeの機能拡張です。",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "8amjp",
     "engines": {
         "vscode": "^1.27.0"
