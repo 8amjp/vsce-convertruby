@@ -1,65 +1,18 @@
 # vsce-convertruby README
 
-ルビの書式を変換する、Visual Studio Codeの機能拡張です。
+ルビ記法を変換する、Visual Studio Codeの機能拡張です。
 
-## Features
+## Command
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### `ルビ記法を括弧書きに変換`
+「｜藤倉紅子《ふじくらこうこ》」を「藤倉紅子（ふじくらこうこ）」に変換します。全角縦棒は削除されます。
 
-For example if there is an image subfolder under your extension project workspace:
+コマンドは、コマンドパレットを開いて(<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></kbd>)入力する他に、
+エディタ内で右クリックして表示されるコンテクストメニューから実行することもできます。  
+また、コマンドが有効になるのは、言語モードがMarkdown形式またはプレーンテキスト形式の場合のみです。
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## ルビ記法について
+ルビ記法とは、[青空文庫](https://www.aozora.gr.jp/)などの小説投稿サイトで使われている、
+ルビ文字を表現するための記法です。  
+HTMLにおける`<ruby>藤倉紅子<rt>ふじくらこうこ</rt></ruby>`といった表記を簡略化するため、
+「｜藤倉紅子《ふじくらこうこ》」というように全角縦棒と二重山括弧を用いて表記します。

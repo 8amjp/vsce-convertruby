@@ -1,7 +1,7 @@
 {
     "name": "vsce-convertruby",
     "displayName": "vsce-convertruby",
-    "description": "",
+    "description": "ルビ記法を変換する、Visual Studio Codeの機能拡張です。",
     "version": "0.0.1",
     "publisher": "8amjp",
     "engines": {
@@ -11,16 +11,30 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.rubyNotationToParentheses"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.rubyNotationToParentheses",
+                "title": "Ruby: ルビ記法を括弧書きに変換"
             }
-        ]
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "resourceLangId == markdown",
+                    "command": "extension.rubyNotationToParentheses",
+                    "group": "navigation"
+                },
+                {
+                    "when": "resourceLangId == plaintext",
+                    "command": "extension.rubyNotationToParentheses",
+                    "group": "navigation"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
